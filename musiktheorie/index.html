@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Musiktheorie lernen</title>
+  <meta name="description" content="Interaktives Musiktheorie-Lernprogramm: Noten, Rhythmus, Intervalle, Tonleitern, Tonarten, Akkorde, Harmonielehre und Gehörbildung." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎼</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menü öffnen">☰</button>
+    <a href="#/" class="brand"><span class="brand-logo">𝄞</span> Musiktheorie <span class="brand-sub">lernen</span></a>
+    <div class="topbar-right">
+      <label class="vol" title="Lautstärke">🔊 <input type="range" id="volume" min="0" max="1" step="0.05" value="0.7" aria-label="Lautstärke" /></label>
+      <button class="icon-btn" id="themeBtn" aria-label="Farbschema wechseln" title="Hell/Dunkel">◐</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" id="sidebar" aria-label="Kapitel"></nav>
+    <div class="backdrop" id="backdrop"></div>
+    <main class="main" id="main" tabindex="-1"></main>
+  </div>
+
+  <script src="js/theory.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/staff.js"></script>
+  <script src="js/piano.js"></script>
+  <script src="js/widgets.js"></script>
+  <script src="js/lessons.js"></script>
+  <script src="js/exercises.js"></script>
+  <script src="js/tools.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
